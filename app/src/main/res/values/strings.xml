@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mínimo Común Múltiplo</string>
+    <string name="nwp">MCM</string>
+    <string name="_1">1</string>
+    <string name="dodaj_wsp_czynnik">Dodaj współczynnik</string>
+    <string name="calculate">Calcular</string>
+    <string name="result">Resultado</string>
+    <string name="lowest_common_denominator">Najmniejszy Wspólny Mianownik</string>
+    <string name="add_factor">añadir denominador</string>
+    <string name="defaultFactorValue">1</string>
+</resources>
