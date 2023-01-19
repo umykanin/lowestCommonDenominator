@@ -3,7 +3,6 @@ package com.nwm2
 import android.content.Context
 import android.os.Bundle
 import android.text.Editable
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
@@ -14,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
 import com.nwm2.databinding.ActivityMainBinding
 import com.nwm2.databinding.FactorViewBinding
-import com.nwm2.service.Nwm
+import com.nwm2.service.LowestCommonDenominator
 
 class MainActivity : AppCompatActivity() {
 
@@ -51,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         val bindingFactorViewBinding = FactorViewBinding.inflate(layoutInflater)
         val deleteButton = bindingFactorViewBinding.deleteButton
         val addedFactorsQuantity = linearLayout.childCount
-        val maxAddedFactorQuantity = 7
+        val maxAddedFactorQuantity = 6
         // delete button with clickListener to remove FactorView layout
         if (activateDelete) {
             deleteButton.setOnClickListener {
@@ -115,7 +114,7 @@ class MainActivity : AppCompatActivity() {
             factors.add(factorValue.text.toString().toInt())
         }
         hideKeyboard()
-        return Nwm.calculate(factors).toString()
+        return LowestCommonDenominator.calculate(factors).toString()
     }
 
     // increment factor value by 1 if empty set value to 1 and setting value to the factor view

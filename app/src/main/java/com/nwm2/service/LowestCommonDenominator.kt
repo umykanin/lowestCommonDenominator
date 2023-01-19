@@ -2,7 +2,7 @@ package com.nwm2.service
 
 import kotlin.math.pow
 
-object Nwm {
+object LowestCommonDenominator {
 
     private lateinit var mainMap: MutableMap<Int, Int>
 
