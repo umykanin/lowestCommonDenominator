@@ -6,12 +6,13 @@
               android:layout_height="match_parent"
               android:gravity="center">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/minus_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            android:background="@drawable/minus_foreground"/>
+            android:foreground="@drawable/minus_foreground"
+            android:background="@drawable/minus_background"/>
     <EditText
             android:id="@+id/factor"
             android:layout_width="150dp"
@@ -24,12 +25,13 @@
             android:maxLength="6"
             android:autofillHints="1"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/plus_button"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginEnd="40dp"
-            android:background="@drawable/plus_foreground"/>
+            android:foreground="@drawable/plus_foreground"
+            android:background="@drawable/plus_background"/>
 
     <Button
             android:id="@+id/delete_button"

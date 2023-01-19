@@ -27,11 +27,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+       binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
         // calculate button
-        calculateButton = binding.calculateButton
+        calculateButton = binding.calculateButton;
         // calculate LCD and binding to resultTextView
         calculateButton.setOnClickListener {
             binding.resultTextView.text = calculateNWM()
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         if (addedFactorsQuantity < maxAddedFactorQuantity) {
             linearLayout.addView(bindingFactorViewBinding.root)
         } else {
-            displayToast("Nie mogę dodać więcej współczynników.")
+            displayToast("No puedo añadir mas.")
         }
         setFactorLayoutListeners(bindingFactorViewBinding)
     }
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
             if (it.toString() == "") {
                 layout.minusButton.setOnClickListener(null)
                 calculateButton.setOnClickListener {
-                    displayToast("Nie mogę obliczyć z niczego!")
+                    displayToast("No puedo calcular...")
                 }
             } else {
                 // if ok set listeners to minusButton and calculateButton
