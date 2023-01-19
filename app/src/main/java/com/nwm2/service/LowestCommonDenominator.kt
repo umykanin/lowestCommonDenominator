@@ -6,9 +6,9 @@ object LowestCommonDenominator {
 
     private lateinit var mainMap: MutableMap<Int, Int>
 
-    fun calculate(list: MutableList<Int>): Int {
+    fun calculate(list: MutableList<Int>): Long {
         mainMap = mutableMapOf()
-        var result = 1
+        var result: Long = 1L
         list.forEach {
             factorize(it)
         }

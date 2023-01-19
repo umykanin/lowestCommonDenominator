@@ -22,7 +22,7 @@
             android:gravity="center"
             android:backgroundTint="@color/white"
             android:textSize="20sp"
-            android:maxLength="6"
+            android:maxLength="4"
             android:autofillHints="1"/>
 
     <androidx.appcompat.widget.AppCompatButton
