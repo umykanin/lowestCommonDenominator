@@ -10,7 +10,8 @@
         <item name="colorSecondaryVariant">@color/yellow_700</item>
         <item name="colorOnSecondary">@color/yellow_200</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- The bubble color in edit text while editing -->
+        <item name="colorAccent">@color/purple_200</item>
     </style>
 </resources>
